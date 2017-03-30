@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif,FixedSys;
+$gray : #8da0b6;
+$white : #ffffff;
+$blue : #008db7;
+
+
+
+body{
+    background-color: $white;
+}
+
+//headerin
+
+#toplogo{
+    margin: 50px 0px 20px 0px;
+}
+
+.pc_menu{
+     margin: 60px 0px 20px 0px;
+}
+
+.pc_menu_li{
+    list-style:none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.menubar{
+    display:inline-block;
+    padding-left: 45px;
+}
+
+
+
+//スマホ設定
+@media (max-width: 550px){
+    #toplogo{
+        margin: 25px 10px 10px 10px;
+    }
+    
+    .logo{
+      width: 190px;
+    }
+    
+    .menu{
+    width: 40px;
+    float: right;
+    margin: 5px;
+}
+    
+    .pc_menu{
+        display: none;
+    }
+}
+
+#sp_menu_icon{
+    margin-top: 15px;
+}
+
+
+
+//pcの時スマホ非表示
+@media (min-width: 550px){
+    .sp_menu{
+        display: none;
+    }
+    
+    .tog_menu{
+        display: none;
+    }
+}
+
+
+
+
+//main
+
+#about{
+    margin: 15px 0px 15px 0px;
+}
+
+.goto{
+    text-align: center;
+}
+.about_text{
+    text-align: center;
+    @include fontsize(15);
+    color:$gray
+}
+
+#gallery_top{
+    margin: 20px 0px 15px 0px;
+}
+
+
+.line{
+    border: solid;
+    border-width: 1px;
+    color: $gray;
+    margin: 10px 0px 15px 0px;
+}
+
+#gallery_about{
+    margin: 30px 0px 15px 0px;
+}
+
+
+.gallery_logo{
+    text-align: center;
+}
+
+
+.gallery_text{
+    text-align: center;
+    @include fontsize(15);
+    color:$gray
+}
+
+.gallery_pic_top{
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+}
+
+#contact{
+    margin: 60px 0px 40px 0px;
+    text-align: center;
+
+
+.contact_logo{
+    text-align: center;
+}
+
+.button_contact{
+    list-style: none;
+    display:inline-block;
+    width: 30px;
+  height: 30px;
+  margin:10px;
+  padding:10px;
+  font-size:1.5rem;
+  vertical-align: middle;
+  text-align: center;
+  background-color: $gray;
+  border-radius: 50%;
+}
+
+i{
+    @include fontsize(27);
+    color: #4e454a;
+}
+
+}
+
+
+
+
+
+
+
+#footerzone{
+  background-color: $blue;
+  padding: 10px 10px;
+  text-align: center;
+  color: #gray;
+}
