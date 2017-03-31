@@ -45,34 +45,54 @@ body{
 
 //スマホ設定
 @media (max-width: 550px){
-    #toplogo{
-        margin: 25px 10px 10px 10px;
+    
+
+    
+    #sp_top_header{
+        display:flex;
+        margin: 10px 0px 5px 0px;
     }
     
-    .logo{
-      width: 190px;
+    
+    #sp_menu_logo{
+        float: left;
+       width: 70%;
+       flex-wrap:wrap;
+       padding: 5px;
+       margin: 15px 5px 10px 5px;
     }
     
-    .menu{
-    width: 40px;
+    
+    #sp_menu_icon{
     float: right;
+    width: 15%;
     margin: 5px;
-}
-    
-    .pc_menu{
-        display: none;
-    }
-}
+    padding: 10px;
+    flex-wrap:wrap;
 
-#sp_menu_icon{
-    margin-top: 15px;
 }
 
 
+.sp_menu_toggle{
+    margin: 10px;
+}
+   .tog_menu{
+    list-style: none;
+    background-color: $white;
+    border: 1px solid #eee;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tog_menu_pic{
+    margin-left: 10px;
+}
+
+}
 
 //pcの時スマホ非表示
 @media (min-width: 550px){
-    .sp_menu{
+    #sp_menu{
         display: none;
     }
     
@@ -81,7 +101,16 @@ body{
     }
 }
 
+    .sp_menu_toggle{
+        display: none;
+    }
 
+//スマホ時ＰＣ非表示
+@media (max-width: 550px){
+    #top_pc_menu{
+        display: none;
+    }
+}
 
 
 //main
@@ -93,6 +122,14 @@ body{
 .goto{
     text-align: center;
 }
+
+@media (max-width: 550px){
+    .goto_pic{
+        width: 80%;
+    }
+}
+
+
 .about_text{
     text-align: center;
     @include fontsize(15);
@@ -120,6 +157,12 @@ body{
     text-align: center;
 }
 
+@media (max-width: 550px){
+    .gallery_logo_pic{
+        width: 60%;
+    }
+}
+
 
 .gallery_text{
     text-align: center;
@@ -132,6 +175,14 @@ body{
     margin: 20px 10px 20px 10px;
 }
 
+@media (max-width: 550px){
+    .gallery_pic_top{
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+
 #contact{
     margin: 60px 0px 40px 0px;
     text-align: center;
@@ -141,6 +192,11 @@ body{
     text-align: center;
 }
 
+@media (max-width: 550px){
+.contact_logo_pic{
+    width: 60%;
+}
+}
 .button_contact{
     list-style: none;
     display:inline-block;
@@ -161,10 +217,6 @@ i{
 }
 
 }
-
-
-
-
 
 
 

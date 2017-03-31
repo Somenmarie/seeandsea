@@ -1,5 +1,12 @@
 
 
+$(document).ready(function(){
+  $("#sp_menu_icon").click(function(){
+    $(".sp_menu_toggle").slideToggle();
+  });
+});
+
+
 
 
 
