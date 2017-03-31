@@ -77,6 +77,10 @@ body {
   font-size: 1.5rem;
   color: #8da0b6; }
 
+@media (max-width: 550px) {
+  .about_text {
+    font-size: 13px;
+    font-size: 1.3rem; } }
 #gallery_top {
   margin: 20px 0px 15px 0px; }
 
@@ -155,17 +159,49 @@ body {
   text-align: center;
   margin: 30px 15px 30px 15px; }
 
+.top_back img {
+  width: 20%; }
+
+@media (max-width: 550px) {
+  #spot_intro {
+    display: block;
+    margin: 0px;
+    padding: 0px; }
+
+  .spot_pic {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+    width: 100%; }
+
+  .top_back img {
+    text-align: center;
+    width: 40%; } }
 #shikoku_cover {
   margin-bottom: 15px; }
 
-.spot_name {
+.spot_name_pc {
   color: #8da0b6;
   font-size: 20px;
   font-size: 2rem;
   margin: 10px 0px 10px 0px;
   padding: 10px; }
 
+.spot_name_sp {
+  color: #8da0b6;
+  font-size: 20px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 10px; }
+
+@media (max-width: 550px) {
+  .spot_name_pc {
+    display: none; } }
+@media (min-width: 550px) {
+  .spot_name_sp {
+    display: none; } }
 #syodo_explain {
+  color: #8da0b6;
   margin-top: 20px;
   margin-bottom: 10px;
   padding-top: 25px; }
@@ -176,5 +212,45 @@ body {
 #spot_back {
   text-align: center;
   margin: 20px 0px 20px 0px; }
+
+@media (max-width: 550px) {
+  .spot_name {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  #syodo_explain {
+    color: #8da0b6;
+    font-size: 13px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 25px; }
+
+  #googlemap_area {
+    width: 100%;
+    margin: 10px 0px 10px 0px; }
+
+  #spot_back img {
+    width: 40%; } }
+#gallery_picgroup {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px; }
+
+.gallery_pic img {
+  padding-top: 10px; }
+
+@media (max-width: 550px) {
+  #gallery_picgroup {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 5px 0px 5px 0px; }
+
+  .gallery_pic {
+    width: 45%; } }
 
 /*# sourceMappingURL=seeandsea.css.map */

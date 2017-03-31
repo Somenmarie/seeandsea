@@ -136,6 +136,13 @@ body{
     color:$gray
 }
 
+@media (max-width: 550px){
+    .about_text{
+         @include fontsize(13);
+    }
+}
+
+
 #gallery_top{
     margin: 20px 0px 15px 0px;
 }
@@ -248,19 +255,68 @@ margin: 20px 35px 20px 40px;
     margin: 30px 15px 30px 15px;
 }
 
+.top_back img{
+    width: 20%;
+}
+
+@media (max-width: 550px){
+    #spot_intro{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+ .spot_pic{
+     margin: 10px 0px 5px 0px;
+     padding: 0px;
+     width: 100%;
+}
+
+.top_back img{
+    text-align: center;
+    width: 40%;
+}
+}
+
+
+
+
 //spot_detail
 
 #shikoku_cover{
     margin-bottom: 15px;
 }
-.spot_name{
+.spot_name_pc{
     color: $gray;
     @include fontsize(20);
     margin: 10px 0px 10px 0px;
     padding: 10px;
 }
 
+.spot_name_sp{
+    color: $gray;
+    @include fontsize(20);
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+@media (max-width: 550px){
+    .spot_name_pc{
+        display: none;
+    }
+}
+
+
+@media (min-width: 550px){
+    .spot_name_sp{
+        display: none;
+    }
+}
+
+
+
 #syodo_explain{
+    color: $gray;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 25px;
@@ -276,4 +332,60 @@ margin: 20px 35px 20px 40px;
 #spot_back{
     text-align: center;
     margin: 20px 0px 20px 0px;
+}
+
+
+@media (max-width: 550px){
+    .spot_name{
+        @include fontsize(20);
+    }
+    
+    #syodo_explain{
+        color: $gray;
+    @include fontsize(13);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+    
+    #googlemap_area{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+    #spot_back img{
+        width: 40%;
+    }
+    
+}
+
+
+
+//gallery
+
+#gallery_picgroup{
+    display:flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    justify-content:space-between;
+    margin: 30px 0px 30px 0px;
+}
+
+.gallery_pic img{
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 550px){
+    #gallery_picgroup{
+    display:flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    justify-content:space-between;
+    margin: 5px 0px 5px 0px;
+}
+.gallery_pic{
+    width: 45%;
+}
+
 }
